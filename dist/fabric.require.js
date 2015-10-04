@@ -15,7 +15,7 @@ if (typeof document !== "undefined" && typeof window !== "undefined") {
     if (fabric.document.createWindow) {
         fabric.window = fabric.document.createWindow();
     } else {
-        fabric.window = fabric.document.parentWindow;
+        fabric.window = fabric.document.defaultWindow;
     }
 }
 
